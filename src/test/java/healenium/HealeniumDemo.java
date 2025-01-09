@@ -22,7 +22,7 @@ public class HealeniumDemo {
 
         driver.get("https://elenastepuro.github.io/test_env/index.html");
 
-        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(102));
+        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(d -> driver.findElement(By.id("change_wait")).isDisplayed());
         driver.findElement(By.id("Submit")).click();
 
